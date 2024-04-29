@@ -3,6 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
-    "./constants": "./src/constants/index.tsx"
+    "./constants": "./src/constants/index.ts"
   }
 }
