@@ -4,10 +4,9 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 type Props = {
   category: { name: string; type: string; filter: string };
-  children: string;
 };
 
-export default function TemplateFilter({ category, children }: Props) {
+export default function TemplateFilter({ category }: Props) {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();
@@ -24,6 +23,8 @@ export default function TemplateFilter({ category, children }: Props) {
   };
 
   return (
-    <button onClick={() => handleSearch(category.filter)}>{children}</button>
+    <button onClick={() => handleSearch(category.filter)}>
+      {category.name}
+    </button>
   );
 }

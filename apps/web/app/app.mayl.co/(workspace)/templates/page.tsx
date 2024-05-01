@@ -43,7 +43,7 @@ export default function () {
   return (
     <div>
       {TEMPLATE_CATEGORY_FILTERS.map((category) => (
-        <TemplateFilter category={category}>{category.name}</TemplateFilter>
+        <TemplateFilter category={category} />
       ))}
     </div>
   );
