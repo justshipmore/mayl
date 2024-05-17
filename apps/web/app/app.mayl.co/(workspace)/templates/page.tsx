@@ -47,7 +47,6 @@ export default function () {
     <div>
       {TEMPLATE_CATEGORY_FILTERS.map((category) => (
         <TemplateFilter category={category} />
-        // <Button>{category.name}</Button>
       ))}
     </div>
   );

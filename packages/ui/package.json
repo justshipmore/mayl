@@ -5,9 +5,7 @@
   "exports": {
     "./components": "./src/components/index.ts",
     "./lib/*": "./src/lib/*.ts",
-    "./styles": "./src/styles.css",
-    "./tailwind.config": "./tailwind.config.ts",
-    "./postcss.config": "./postcss.config.js"
+    "./styles": "./src/styles.css"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
