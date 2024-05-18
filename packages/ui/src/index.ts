@@ -8,3 +8,5 @@ export * from "./components/ui/avatar";
 
 // custom components
 export * from "./components/navbar"; 
+export * from "./components/main-container"
+export * from "./components/nav-logo"

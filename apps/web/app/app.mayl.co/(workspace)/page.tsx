@@ -1,13 +1,21 @@
-import { APP_SELECT_TEMPLATE_PATH } from "@repo/utils/constants";
-import Link from "next/link";
+"use client";
+
+import EmptyWorkspace from "../../../components/workspace/empty-workspace";
+import WorkspaceEmailList from "../../../components/workspace/workspace-email-list";
+import WorkspaceHeaderSection from "../../../components/workspace/workspace-header-section";
 
 export default function () {
+  const isEmpty = false;
   return (
     <>
-      <h3>My workspace</h3>
-      <p>You don't have any emails created yet!</p>
-
-      <Link href={APP_SELECT_TEMPLATE_PATH}>Create new email</Link>
+      {isEmpty ? (
+        <EmptyWorkspace />
+      ) : (
+        <>
+          <WorkspaceHeaderSection />
+          <WorkspaceEmailList />
+        </>
+      )}
     </>
   );
 }

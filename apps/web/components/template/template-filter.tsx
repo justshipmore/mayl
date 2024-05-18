@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@repo/ui/components";
+import { Button } from "@repo/ui";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 type Props = {
