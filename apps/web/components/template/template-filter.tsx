@@ -29,8 +29,16 @@ export default function TemplateFilter({ category }: Props) {
       style={{ marginRight: 16, marginTop: 16 }}
       size="sm"
       onClick={() => handleSearch(category.filter)}
+      className="rounded-full"
+      variant={category.name === "Magic link" ? "default" : "ghost"}
     >
-      {category.name}
+      <span
+        className={
+          category.name === "Magic link" ? "" : "text-muted-foreground"
+        }
+      >
+        {category.name}
+      </span>
     </Button>
   );
 }
