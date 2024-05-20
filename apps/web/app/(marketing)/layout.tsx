@@ -1,3 +1,5 @@
+"use client";
+
 import { Navbar } from "@repo/ui";
 import { PropsWithChildren } from "react";
 
